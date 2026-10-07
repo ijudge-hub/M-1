@@ -1,4 +1,4 @@
-# M1-1 시계열 데이터 분석
+# 미국 TSA 보안검색 통과자 수 분석 (M1-1)
 
 분석 리포트: [REPORT.md](REPORT.md)
 
@@ -6,6 +6,7 @@
 
 ```
 M1-1-project/
+├── collect_data.py  데이터 수집 스크립트
 ├── data/            원본 데이터 (csv)
 ├── images/          리포트에 들어가는 그래프 (png)
 ├── analysis.ipynb   분석 노트북
@@ -27,7 +28,7 @@ jupyter notebook analysis.ipynb
 
 ## 데이터
 
-- 출처: (작성)
-- 기간: (작성)
-- 수집 방법: (작성)
-- 라이선스/이용 조건: (작성)
+- 출처: [TSA Checkpoint Travel Numbers](https://www.tsa.gov/travel/passenger-volumes)
+- 기간: 2019-01-01 ~ 2026-10-05 (일별, 2,835일)
+- 수집 방법: `python3 collect_data.py` 실행 시 tsa.gov 연도별 표를 모아 `data/tsa_daily.csv`로 저장
+- 라이선스/이용 조건: 미국 연방정부 공개 자료 (public domain)
