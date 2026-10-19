@@ -95,7 +95,8 @@
 ## 7. 보너스 과제
 
 ### 대시보드
-- `streamlit run dashboard.py`로 실행. 기간·집계 단위·이동평균·요일을 바꿔 가며 탐색할 수 있다. 실행 방법과 시나리오는 README 참고.
+- 배포 URL: https://ijudge-tsa.streamlit.app/ (Streamlit Community Cloud)
+- 기간·집계 단위·이동평균·요일을 바꿔 가며 탐색할 수 있다. 로컬 실행은 `streamlit run dashboard.py`. 실행 방법과 시나리오는 README 참고.
 
 ### 시계열 분해
 

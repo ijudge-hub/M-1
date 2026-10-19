@@ -2,6 +2,8 @@
 
 분석 리포트: [REPORT.md](REPORT.md)
 
+대시보드 (배포): https://ijudge-tsa.streamlit.app/
+
 ## 폴더 구조
 
 ```
@@ -31,7 +33,11 @@ jupyter notebook analysis.ipynb
 
 ## 보너스 과제
 
-### 1. 대시보드 (로컬 실행)
+### 1. 대시보드
+
+**배포 URL: https://ijudge-tsa.streamlit.app/** (Streamlit Community Cloud, 로그인 없이 접속 가능)
+
+로컬에서 실행하려면:
 
 ```bash
 streamlit run dashboard.py
@@ -48,7 +54,7 @@ streamlit run dashboard.py
 
 화면 구성: 요약 지표(일평균, 최고, 최저, 전년 같은 기간 대비) → 추이 그래프 → 요일별·월별 평균 → 가장 붐빈 날·한산한 날 Top 5
 
-주소 뒤에 조건을 붙여서 바로 열 수도 있음: `?start=2020-01-01&end=2021-12-31&unit=월&days=화,일&ma=1`
+주소 뒤에 조건을 붙여서 바로 열 수도 있음 (예: https://ijudge-tsa.streamlit.app/?start=2020-01-01&end=2021-12-31&unit=월): `?start=2020-01-01&end=2021-12-31&unit=월&days=화,일&ma=1`
 
 #### 스크린샷 · 탐색 시나리오
 
