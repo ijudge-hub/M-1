@@ -3,11 +3,13 @@
 실행: streamlit run dashboard.py
 기간, 집계 단위, 이동평균, 요일을 바꿔 가며 데이터를 탐색한다.
 """
+from pathlib import Path
+
 import altair as alt
 import pandas as pd
 import streamlit as st
 
-DATA_PATH = "data/tsa_daily.csv"
+DATA_PATH = Path(__file__).parent / "data" / "tsa_daily.csv"  # 어디서 실행해도 찾도록
 WEEKDAYS = ["월", "화", "수", "목", "금", "토", "일"]
 
 st.set_page_config(page_title="TSA 통과자 수 대시보드", layout="wide")
